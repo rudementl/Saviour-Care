@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Saviour Care</title>
+  </head>
+  <body>
+    <header id="home" class="container mx-auto flex justify-between items-center pt-14 md:pt-24">
+      <div>
+        <a href="#" class="text-[#462E6A] text-xl md:text-2xl font-bold">Saviour Care</a>
+      </div>
+      <button id="burger-menu" class="block sm:hidden relative">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+      <div id="mobile-menu" class="hidden sm:hidden absolute top-24 right-5">
+        <ul class="flex flex-col gap-4 bg-[#458ff6] rounded-xl p-7 shadow-lg shadow-blue-500/50">
+          <li>
+            <a href="#" class="block text-white hover:underline text-base md:text-lg">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:underline text-base md:text-lg">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:underline text-base md:text-lg">Contacts</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:underline text-base md:text-lg">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="hidden sm:block">
+        <ul class="flex md:gap-12">
+          <li class="w-20">
+            <a
+              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="w-20">
+            <a
+              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              href="#"
+              >Services</a
+            >
+          </li>
+          <li class="w-20">
+            <a
+              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              href="#"
+              >Contacts</a
+            >
+          </li>
+          <li class="w-20">
+            <a
+              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              href="#"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container mx-auto md:flex pb-48">
+      <div class="left-side">
+        <div>
+          <h1
+            class="text-[#3C567B] font-bold text-[36px] lg:text-[40px] xl:text-[48px] max-w-[620px] pt-[70px] md:pt-[184px] pb-8 md:pb-12 leading-[117%]"
+          >
+            Virtual healthcare Saviour for you
+          </h1>
+        </div>
+        <div>
+          <p
+            class="text-[#93C1F9] font-medium text-xl md:text[14px] 2xl:text-[19px] max-w-[520px] leading-[142%] tracking-[.02em] pb-12 md:pb-[72px]"
+          >
+            In today's fast-paced world, virtual healthcare emerges as your ultimate savior. With
+            the convenience of technology, access to quality medical assistance is now at your
+            fingertips.
+          </p>
+        </div>
+        <div
+          class="w-full h-auto md:w-48 md:h-16 rounded-[55px] bg-[#458ff6] hover:bg-[#2b5a9c] md:transition-all text-center cursor-pointer"
+        >
+          <a class="font-bold text-lg text-white leading-[316%]" href="#">Consult today</a>
+        </div>
+      </div>
+      <div class="right-side pt-[50px] md:pt-[168px]">
+        <img src="./img/hero-bg.png" alt="bacgrkound image" />
+      </div>
+    </section>
+    <div class="bg-[#f3fbff]">
+      <section class="container mx-auto pt-28">
+        <div class="text-center">
+          <h2 class="text-[#462E6A] font-bold text-[45px] leading-[124%] pb-9">
+            Services we Offer
+          </h2>
+          <p
+            class="text-[#a7a7a7] font-medium text-[19px] leading-[142%] tracking-[.02em] max-w-3xl m-[auto] pb-28"
+          >
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
