@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./public/*.html'],
   theme: {
+    fontFamily: {
+      body: ['Mulish'],
+    },
     container: {
       center: true,
       padding: '1rem',
