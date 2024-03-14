@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +12,14 @@
     />
     <title>Saviour Care</title>
   </head>
-  <body class="font-body">
+  <body class="font-body bg-white dark:bg-gray-950 dark:text-gray-100">
     <header id="home" class="container mx-auto flex justify-between items-center pt-14 md:pt-24">
       <div>
-        <a href="#!" class="text-[#462E6A] text-xl md:text-2xl font-bold">Saviour Care</a>
+        <a
+          href="#!"
+          class="text-[#462E6A] text-xl md:text-2xl font-bold dark:text-white md:transition-all"
+          >Saviour Care</a
+        >
       </div>
       <button id="burger-menu" class="block sm:hidden relative">
         <svg
@@ -34,66 +38,104 @@
         </svg>
       </button>
       <div id="mobile-menu" class="hidden sm:hidden absolute top-24 right-5">
-        <ul class="flex flex-col gap-4 bg-[#458ff6] rounded-xl p-7 shadow-lg shadow-blue-500/50">
+        <ul
+          class="flex flex-col gap-4 bg-[#458ff6] dark:bg-white dark:shadow-md dark:shadow-gray-100 rounded-xl p-7 shadow-lg shadow-blue-500/50"
+        >
           <li>
-            <a href="#!" class="block text-white hover:underline text-base md:text-lg">Home</a>
+            <a
+              href="#!"
+              class="block text-white dark:text-[#458ff6] hover:underline text-base md:text-lg"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#!" class="block text-white hover:underline text-base md:text-lg">Services</a>
+            <a
+              href="#!"
+              class="block text-white dark:text-[#458ff6] hover:underline text-base md:text-lg"
+              >Services</a
+            >
           </li>
           <li>
-            <a href="#!" class="block text-white hover:underline text-base md:text-lg">Contacts</a>
+            <a
+              href="#!"
+              class="block text-white dark:text-[#458ff6] hover:underline text-base md:text-lg"
+              >Contacts</a
+            >
           </li>
           <li>
-            <a href="#!" class="block text-white hover:underline text-base md:text-lg">FAQ</a>
+            <a
+              href="#!"
+              class="block text-white dark:text-[#458ff6] hover:underline text-base md:text-lg"
+              >FAQ</a
+            >
           </li>
         </ul>
       </div>
       <nav class="hidden sm:block">
-        <ul class="flex md:gap-12">
+        <ul class="flex items-center md:gap-12">
           <li class="w-20">
             <a
-              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              class="text-[#1F1534] dark:text-white hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
               href="#!"
               >Home</a
             >
           </li>
           <li class="w-20">
             <a
-              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              class="text-[#1F1534] dark:text-white hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
               href="#!"
               >Services</a
             >
           </li>
           <li class="w-20">
             <a
-              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              class="text-[#1F1534] dark:text-white hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
               href="#!"
               >Contacts</a
             >
           </li>
           <li class="w-20">
             <a
-              class="text-[#1F1534] hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
+              class="text-[#1F1534] dark:text-white hover:text-[#2E4E92] hover:font-bold md:transition-all text-base md:text-lg"
               href="#!"
               >FAQ</a
             >
           </li>
         </ul>
       </nav>
+      <div class="hidden xl:block">
+        <div class="flex justify-end items-center space-x-2">
+          <span>
+            <img class="w-10 h-10" src="./img/light-theme.png" alt="light theme" />
+          </span>
+          <div>
+            <input type="checkbox" name="" id="toggle" class="hidden" />
+            <label for="toggle">
+              <div class="w-9 h-5 flex items-center bg-gray-300 dark:bg-gray-600 rounded-full p-1">
+                <div
+                  class="toggle-dot w-4 h-4 bg-white rounded-full shadow-md transform duration-300 ease-in-out"
+                ></div>
+              </div>
+            </label>
+          </div>
+          <span>
+            <img class="w-7 h-7" src="./img/dark-theme.png" alt="dark theme" />
+          </span>
+        </div>
+      </div>
     </header>
-    <section class="container mx-auto md:flex pb-36 md:pb-48">
+    <section class="container mx-auto md:flex pb-36 md:pb-56">
       <div class="left-side">
         <div>
           <h1
-            class="text-[#3C567B] font-bold text-[36px] lg:text-[40px] xl:text-[48px] max-w-[620px] pt-[70px] md:pt-[184px] pb-8 md:pb-12 leading-[117%]"
+            class="text-[#3C567B] dark:text-gray-100 md:transition-all font-bold text-[36px] lg:text-[40px] xl:text-[48px] max-w-[620px] pt-[70px] md:pt-[184px] pb-8 md:pb-12 leading-[117%]"
           >
             Virtual healthcare Saviour for you
           </h1>
         </div>
         <div>
           <p
-            class="text-[#93C1F9] font-medium text-xl md:text[14px] 2xl:text-[19px] max-w-[520px] leading-[142%] tracking-[.02em] pb-12 md:pb-[72px]"
+            class="text-[#93C1F9] dark:text-gray-200 md:transition-all font-medium text-xl md:text[14px] 2xl:text-[19px] max-w-[520px] leading-[142%] tracking-[.02em] pb-12 md:pb-[72px]"
           >
             In today's fast-paced world, virtual healthcare emerges as your ultimate savior. With
             the convenience of technology, access to quality medical assistance is now at your
@@ -101,23 +143,27 @@
           </p>
         </div>
         <div
-          class="w-full h-auto md:w-48 md:h-16 rounded-[55px] bg-[#458ff6] hover:bg-[#2b5a9c] md:transition-all text-center cursor-pointer"
+          class="w-full h-auto md:w-48 md:h-16 rounded-[55px] bg-[#458ff6] dark:bg-white dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] hover:bg-[#2b5a9c] md:transition-all text-center cursor-pointer"
         >
-          <a class="font-bold text-lg text-white leading-[316%]" href="#!">Consult today</a>
+          <a
+            class="font-bold text-lg text-white md:transition-all dark:text-[#458ff6] leading-[316%]"
+            href="#!"
+            >Consult today</a
+          >
         </div>
       </div>
       <div class="right-side pt-[50px] md:pt-[168px]">
         <img src="./img/hero-bg.png" alt="bacgrkound image" />
       </div>
     </section>
-    <div class="bg-[#f3fbff]">
+    <div class="bg-[#f3fbff] dark:bg-gray-950">
       <section class="container mx-auto pt-24 md:pt-28 pb-[88px]">
         <div class="text-center">
-          <h2 class="text-[#462E6A] font-bold text-[45px] leading-[124%] pb-9">
+          <h2 class="text-[#462E6A] dark:text-gray-100 font-bold text-[45px] leading-[124%] pb-9">
             Services we Offer
           </h2>
           <p
-            class="text-[#a7a7a7] font-medium text-[19px] leading-[142%] tracking-[.02em] max-w-3xl m-[auto] pb-28"
+            class="text-[#a7a7a7] font-medium text-[19px] dark:text-gray-200 leading-[142%] tracking-[.02em] max-w-3xl m-[auto] pb-28"
           >
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
             dolor. Aenean massa.
@@ -127,7 +173,7 @@
           class="flex flex-col md:flex-row md:flex-wrap md:justify-between items-center md:pb-[70px]"
         >
           <div
-            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:transition-all mb-6 md:md-5 cursor-pointer"
+            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all mb-6 md:md-5 cursor-pointer"
           >
             <img
               src="./img/search-doctor.svg"
@@ -144,7 +190,7 @@
             >
           </div>
           <div
-            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:transition-all mb-6 md:mb-5 cursor-pointer"
+            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all mb-6 md:mb-5 cursor-pointer"
           >
             <img
               src="./img/pharmacy.svg"
@@ -163,7 +209,7 @@
             >
           </div>
           <div
-            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:transition-all mb-6 md:mb-5 cursor-pointer"
+            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all mb-6 md:mb-5 cursor-pointer"
           >
             <img
               src="./img/consulltating.svg"
@@ -178,7 +224,7 @@
             >
           </div>
           <div
-            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:transition-all mb-6 md:mb-5 cursor-pointer"
+            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all mb-6 md:mb-5 cursor-pointer"
           >
             <img
               src="./img/details_info.svg"
@@ -193,7 +239,7 @@
             >
           </div>
           <div
-            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:transition-all mb-6 md:mb-5 cursor-pointer"
+            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all mb-6 md:mb-5 cursor-pointer"
           >
             <img
               src="./img/emergency.svg"
@@ -211,7 +257,7 @@
             >
           </div>
           <div
-            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:transition-all mb-6 md:mb-5 cursor-pointer"
+            class="flex flex-col items-center w-[375px] h-[354px] rounded-[20px] bg-[#fff] p-14 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all mb-6 md:mb-5 cursor-pointer"
           >
             <img
               src="./img/tracking.svg"
@@ -229,7 +275,7 @@
         </div>
         <div>
           <a
-            class="block w-3/4 m-[auto] text-lg text-[#458ff6] hover:text-[#fff] leading-[290%] rounded-[55px] border border-[#458ff6] hover:bg-[#458ff6] md:w-[280px] h-14 text-center hover:shadow-lg hover:shadow-blue-500/50 md:transition-all"
+            class="block w-3/4 m-[auto] font-bold dark:bg-white text-[#458ff6] dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] text-lg dark:text-[#458ff6] hover:text-[#fff] dark:hover:text-[458ff6] leading-[290%] rounded-[55px] border dark:border-white border-[#458ff6] hover:bg-[#458ff6] md:w-[280px] h-14 text-center hover:shadow-lg hover:shadow-blue-500/50 md:transition-all"
             href="#!"
             >Learn more</a
           >
@@ -243,35 +289,39 @@
         <img src="./img/illustration-01.png" alt="illustration" class="md:pt-[100px]" />
       </div>
       <div class="flex flex-col">
-        <h4 class="font-bold text-[#462e6a] text-4xl max-w-[464px] pb-[40px] md:pt-[155px]">
+        <h4
+          class="font-bold text-[#462e6a] text-4xl dark:text-gray-100 max-w-[464px] pb-[40px] md:pt-[155px]"
+        >
           Leading healthcare providers
         </h4>
-        <p class="font-light max-w-[434px] pb-[36px] text-[#7d7987] leading-[line-height: 167%]">
+        <p
+          class="font-light max-w-[434px] pb-[36px] text-[#7d7987] dark:text-gray-200 leading-[line-height: 167%]"
+        >
           Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online
           for everyone. To us, it’s not just work. We take pride in the solutions we deliver
         </p>
         <a
-          class="border w-3/4 border-[#458ff6] m-[auto] md:m-0 text-lg rounded-[55px] hover:text-[#fff] hover:bg-[#458ff6] hover:shadow-lg hover:shadow-blue-500/50 md:transition-all block text-center leading-[290%] md:w-[218px] h-[56px]"
+          class="border w-3/4 dark:border-white dark:bg-white text-[#458ff6] dark:text-[#458ff6] font-bold border-[#458ff6] m-[auto] md:m-0 text-lg rounded-[55px] hover:text-[#fff] hover:bg-[#458ff6] hover:shadow-lg hover:shadow-blue-500/50 dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all block text-center leading-[290%] md:w-[218px] h-[56px]"
           href="#!"
           >Learn more</a
         >
       </div>
     </section>
     <section
-      class="container mx-auto flex flex-col-reverse md:flex md:flex-row items-center pt-[100px] pb-[80px] md:pt-[224px] md:pb-[170px]"
+      class="container mx-auto flex flex-col-reverse md:flex md:flex-row md:justify-between items-center pt-[100px] pb-[80px] md:pt-[224px] md:pb-[170px]"
     >
       <div>
-        <h4 class="font-bold text-[#462e6a] text-4xl max-w-[510px] pb-[50px]">
+        <h4 class="font-bold text-[#462e6a] text-4xl max-w-[510px] dark:text-gray-100 pb-[50px]">
           Download our Saviour Care mobile app
         </h4>
         <p
-          class="font-light max-w-[434px] pb-[36px] text-[#7d7987] leading-[line-height: 167%] pb-[40px]"
+          class="font-light max-w-[434px] pb-[36px] text-[#7d7987] dark:text-gray-200 leading-[line-height: 167%] pb-[40px]"
         >
           Our dedicated patient engagement app and web portal allow you to access information
           instantaneously (no tedeous form, long calls, or administrative hassle) and securely
         </p>
         <a
-          class="border w-3/4 border-[#458ff6] m-[auto] md:m-0 text-lg rounded-[55px] hover:text-[#fff] hover:bg-[#458ff6] hover:shadow-lg hover:shadow-blue-500/50 md:transition-all block text-center leading-[290%] md:w-[218px] h-[56px]"
+          class="border w-3/4 border-[#458ff6] text-[#458ff6] font-bold dark:border-white dark:text-[#458ff6] dark:bg-white m-[auto] md:m-0 text-lg rounded-[55px] hover:text-[#fff] hover:bg-[#458ff6] hover:shadow-lg hover:shadow-blue-500/50 dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all block text-center leading-[290%] md:w-[218px] h-[56px]"
           href="#!"
           >Download</a
         >
@@ -287,31 +337,33 @@
         <img src="./img/doctor-img.png" alt="doctor img" />
       </div>
       <div>
-        <h4 class="font-bold text-[#462e6a] text-4xl max-w-[510px] pb-[30px]">
+        <h4 class="font-bold text-[#462e6a] text-4xl dark:text-gray-100 max-w-[510px] pb-[30px]">
           Find a Doctor near you
         </h4>
         <p
-          class="font-light max-w-[380px] pb-[36px] text-[#7d7987] leading-[line-height: 167%] pb-[78px]"
+          class="font-light max-w-[380px] pb-[36px] text-[#7d7987] dark:text-gray-200 leading-[line-height: 167%] pb-[78px]"
         >
           Our app and web portal allows you to find the doctor to your nearest location.
         </p>
         <a
-          class="border w-3/4 border-[#458ff6] m-[auto] md:m-0 text-lg rounded-[55px] hover:text-[#fff] hover:bg-[#458ff6] hover:shadow-lg hover:shadow-blue-500/50 md:transition-all block text-center leading-[290%] md:w-[218px] h-[56px]"
+          class="border w-3/4 font-bold text-[#458ff6] dark:border-white dark:bg-white dark:text-[#458ff6] border-[#458ff6] m-[auto] md:m-0 text-lg rounded-[55px] hover:text-[#fff] hover:bg-[#458ff6] hover:shadow-lg hover:shadow-blue-500/50 dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all block text-center leading-[290%] md:w-[218px] h-[56px]"
           href="#!"
           >Find now</a
         >
       </div>
     </section>
     <section
-      class="max-w-[1700px] m-[auto] rounded-3xl mx-auto bg-[linear-gradient(223deg,_#6888c8_0%,_#5a98f2_100%)]"
+      class="max-w-[1700px] m-[auto] rounded-3xl mx-auto bg-[linear-gradient(223deg,_#6888c8_0%,_#5a98f2_100%)] dark:bg-gradient-to-l from-transparent to-transparent"
     >
       <p
-        class="text-bold text-white text-2xl md:text-4xl leading-[133%] text-center pt-[90px] pb-12 md:pb-24"
+        class="text-bold text-white text-2xl md:text-4xl dark:text-gray-100 leading-[133%] text-center pt-[90px] pb-12 md:pb-24"
       >
         Sign up with us online
       </p>
       <form class="container mx-auto w-2/3 md:w-full md:max-w-lg">
-        <div class="flex items-center border-b md:border-b-2 border-white py-4">
+        <div
+          class="flex items-center border-b md:border-b-2 border-white dark:border-[#458ff6] py-4"
+        >
           <input
             class="appearance-none bg-transparent border-none w-full font-bold text-white placeholder-white text-lg md:text-2xl mr-3 py-1 px-5 leading-[150%] focus:outline-none"
             type="text"
@@ -319,7 +371,9 @@
             aria-label="Full name"
           />
         </div>
-        <div class="flex items-center border-b md:border-b-2 border-white py-4">
+        <div
+          class="flex items-center border-b md:border-b-2 border-white dark:border-[#458ff6] py-4"
+        >
           <input
             class="appearance-none bg-transparent border-none w-full font-bold text-white placeholder-white text-lg md:text-2xl mr-3 py-1 px-5 leading-[150%] focus:outline-none"
             type="text"
@@ -327,7 +381,9 @@
             aria-label="Full name"
           />
         </div>
-        <div class="flex items-center border-b md:border-b-2 border-white py-4">
+        <div
+          class="flex items-center border-b md:border-b-2 border-white dark:border-[#458ff6] py-4"
+        >
           <input
             class="appearance-none bg-transparent border-none w-full font-bold text-white placeholder-white text-lg md:text-2xl mr-3 py-1 px-5 leading-[150%] focus:outline-none"
             type="email"
@@ -338,48 +394,59 @@
         <div class="pt-7 md:pt-14 pb-4">
           <button
             type="submit"
-            class="bg-transparent w-full h-12 mx-auto border-[1.4px] md:w-[510px] md:h-[56px] text-white text-center font-bold rounded-full hover:text-[#458ff6] hover:bg-[#fff] hover:shadow-lg hover:shadow-blue-500/50 md:transition-all"
+            class="bg-transparent w-full h-12 mx-auto border-[1.4px] md:w-[510px] md:h-[56px] text-white hover:dark:text-[#458ff6] text-center font-bold rounded-full hover:text-[#458ff6] hover:bg-[#fff] hover:shadow-lg hover:shadow-blue-500/50 dark:hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.1)] md:transition-all"
           >
             Send
           </button>
         </div>
       </form>
     </section>
-    <section
-      class="mx-auto bg-[linear-gradient(212deg,_#6888c8_0%,_#5a98f2_100%)] mt-56 pt-[120px] pb-24"
-    >
-      <div class="flex flex-col md:items-center md:flex-row md:pl- gap-0 lg:gap-[260px]">
-        <div class="px-4 md:pl-36">
-          <h5 class="font-bold text-white text-2xl pb-5">Saviour Care</h5>
-          <p
-            class="font-medium text-base md:text-lg text-white leading-[150%] tracking-widest max-w-[440px] pb-8"
-          >
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-            dolor. Aenean massa.
-          </p>
-          <span class="font-light text-base text-white leading-[175%]"
-            >©AK PVT LTD 2021. All rights reserved</span
-          >
+
+    <footer>
+      <section
+        class="mx-auto bg-[linear-gradient(212deg,_#6888c8_0%,_#5a98f2_100%)] dark:bg-gradient-to-l from-transparent to-transparent mt-36 md:mt-56 pt-[120px] pb-24"
+      >
+        <div class="flex flex-col md:items-center md:flex-row md:pl- gap-0 lg:gap-[260px]">
+          <div class="px-4 md:pl-36">
+            <h5 class="font-bold text-white text-2xl pb-5 dark:text-gray-100">Saviour Care</h5>
+            <p
+              class="font-medium text-base md:text-lg text-white leading-[150%] tracking-widest max-w-[440px] pb-8 dark:text-gray-200"
+            >
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+              dolor. Aenean massa.
+            </p>
+            <span class="font-light text-base text-white leading-[175%] dark:text-gray-300"
+              >©AK PVT LTD 2021. All rights reserved</span
+            >
+          </div>
+          <div class="px-4">
+            <span class="text-white font-bold leading-[300%] text-xl">Company</span>
+            <ul>
+              <li
+                class="text-white leading-[210%] text-lg font-light dark:text-gray-300 hover:underline"
+              >
+                <a href="#!">About</a>
+              </li>
+              <li
+                class="text-white leading-[210%] text-lg font-light dark:text-gray-300 hover:underline"
+              >
+                <a href="#!">Testimonials</a>
+              </li>
+              <li
+                class="text-white leading-[210%] text-lg font-light dark:text-gray-300 hover:underline"
+              >
+                <a href="#!">Find a doctor</a>
+              </li>
+              <li
+                class="text-white leading-[210%] text-lg font-light dark:text-gray-300 hover:underline"
+              >
+                <a href="#!">Apps</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="px-4">
-          <span class="text-white font-bold leading-[300%] text-xl">Company</span>
-          <ul>
-            <li class="text-white leading-[210%] text-lg font-light">
-              <a href="#!">About</a>
-            </li>
-            <li class="text-white leading-[210%] text-lg font-light">
-              <a href="#!">Testimonials</a>
-            </li>
-            <li class="text-white leading-[210%] text-lg font-light">
-              <a href="#!">Find a doctor</a>
-            </li>
-            <li class="text-white leading-[210%] text-lg font-light">
-              <a href="#!">Apps</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
